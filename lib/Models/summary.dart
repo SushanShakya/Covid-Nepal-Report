@@ -28,6 +28,10 @@ class SummaryModel {
     };
 }
 
+CountryCases countryCasesFromJson(String str) => CountryCases.fromJson(json.decode(str));
+
+String countryCasesToJson(CountryCases data) => json.encode(data.toJson());
+
 class CountryCases {
     CountryCases({
         this.country,
@@ -80,6 +84,10 @@ class CountryCases {
     };
 }
 
+GlobalCases globalCasesFromJson(String str) => GlobalCases.fromJson(json.decode(str));
+
+String globalCasesToJson(GlobalCases data) => json.encode(data.toJson());
+
 class GlobalCases {
     GlobalCases({
         this.newConfirmed,
@@ -97,7 +105,7 @@ class GlobalCases {
     int newRecovered;
     int totalRecovered;
 
-    factory GlobalCases.fromJson(Map<String, dynamic> json) => Global(
+    factory GlobalCases.fromJson(Map<String, dynamic> json) => GlobalCases(
         newConfirmed: json["NewConfirmed"],
         totalConfirmed: json["TotalConfirmed"],
         newDeaths: json["NewDeaths"],
