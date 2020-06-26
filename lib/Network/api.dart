@@ -1,7 +1,5 @@
 import 'package:covid_nepal_data/Data/constants.dart';
 import 'package:covid_nepal_data/Models/summary.dart';
-import 'package:flutter/foundation.dart';
-
 import 'package:http/http.dart' as http;
 
 class CovidApi {

@@ -5,8 +5,7 @@ class CountryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Teddy(
-        animation: TeddyAnimation.idle,
+      body: Teddy(        
       ),
     );
   }
