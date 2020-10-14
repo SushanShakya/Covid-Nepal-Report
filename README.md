@@ -5,6 +5,7 @@
 # Features
     -> Integration of RIVE
     -> Bear Animation available offline
+    -> Follows BLoC Pattern
 
 Data Source -> [Api](https://api.covid19api.com)
 
